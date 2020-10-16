@@ -12,6 +12,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/myjs.js') }}" defer></script>
+
+    <script src="{{ asset('js/jquery-3.2.1.slim.min.js') }}" defer></script>
+    <script src="{{ asset('js/popper.min.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-3.1.1.min.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -19,6 +24,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/mystyle.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" >
 </head>
 <body>
     <div id="app">
