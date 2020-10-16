@@ -1,0 +1,20 @@
+.wrong {
+    width: 30px;
+    background: red;
+    height: 16px;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.correct {
+    width: 30px;
+    background: rgb(5, 182, 5);
+    height: 16px;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+.arr {
+    cursor: pointer;
+}
