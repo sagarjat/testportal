@@ -30,11 +30,16 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <?php $classname = ''; ?>
+    @if (substr(strrchr(url()->current(),"/"),1) == 'starttest')
+        <?php $classname = ' hide-header '; ?>
+    @endif
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm <?=$classname;?>">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <span class="navbar-brand" >
                     {{ config('app.name', 'Test-Portal') }}
-                </a>
+
+                </span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

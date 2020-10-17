@@ -22,7 +22,7 @@
                                 {{ session('failure') }}
                             </div>
                         @endif
-                        <a href="/starttest" class="btn btn-xs btn-primary pull-right">Start Test</a>
+                        <a href="/instruction" class="btn btn-xs btn-primary pull-right">Start Test</a>
                         <a href="/view" class="btn btn-xs btn-primary pull-right">View Result</a>
                     </div>
                     <div class="card-footer d-flex justify-content-center">

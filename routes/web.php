@@ -58,3 +58,9 @@ Route::post('/participents', [App\Http\Controllers\HomeController::class, 'getAl
 
 Auth::routes();
 Route::get('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
+
+
+Auth::routes();
+Route::get('/instruction', function () {
+    return view('instruction');
+});

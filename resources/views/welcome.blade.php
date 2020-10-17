@@ -3,10 +3,10 @@
 @section('content')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container ">
 
         <!-- Jumbotron Header -->
-        <header class="jumbotron my-4">
+        <header class="jumbotron my-4 custom-lander">
             <div class="text-center header-message">Welcome, Fyn-Tune Test Portal</div>
             <!-- <div class="text-center">
                 <a href="" class="btn btn-default btn-rounded my-3 login-btn" data-toggle="modal" data-target="#modalLRForm">LogIn/Register</a>
@@ -14,17 +14,7 @@
         </header>
 
     </div>
-    <!-- /.container -->
-    <style>
-        .header-message {
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .login-btn {
-            background: blue;
-            color: white;
-        }
-    </style>
+
     <!--Modal: Login / Register Form-->
     <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog cascading-modal" role="document">
@@ -75,19 +65,4 @@
         </div>
     </div>
     <!--Modal: Login / Register Form-->
-    <script>
-        $("#btnsub").on('click',function(){
-            var email = $('#email').val();
-            var password = $('#password').val();
-            console.log(email,password);
-            $.ajax({
-                url:  '/laravel/login',
-                type: 'POST',
-                data: {email:email,password:password,_token:"{{ csrf_token() }}"},
-                success: function (response) {
-                    response = JSON.parse(response);
-                }
-            });
-        });
-    </script>
 @stop
