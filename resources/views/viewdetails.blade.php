@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <form action="/submit" method="POST">
                 @csrf
                 <div class="card">
@@ -21,6 +21,7 @@
                             </div>
                         @endif
                         <?php $i =1; $j=1; $res;?>
+                        <div class="d-flex justify-content-center"><b>Test No : {{$test_id}}</b></div>
                         @foreach ($data as $sub)  
                             <div class="d-flex flex-column">
                                 <?php if($i == 1) {
@@ -31,7 +32,7 @@
                                         $res = $sub->result_id;
                                    }
                                 }?>
-                                <div class="d-flex justify-content-center"><b>Test No : {{$sub->result_id}}</b></div>
+                                
                                 <div><b>Question {{$i}} : </b>{{$sub->question}}</div>
                                 <br>
                                 <div> <b>Correct Answer: </b>{{$sub->correct_answer}}</div>
@@ -44,6 +45,9 @@
                         @endforeach
                     </div>
                     
+                </div>
+                <div class="card-footer">
+                <div class="text-center"><button type="/submitexam" class="btn btn-primary">GO Back</button></div>
                 </div>
             </form>
         </div>

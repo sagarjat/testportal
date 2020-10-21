@@ -1,20 +1,30 @@
 .wrong {
-    width: 30px;
+    width: 15px;
     background: red;
-    height: 16px;
+    height: 15px;
     display: inline-block;
     margin-top: 5px;
-    vertical-align: middle;
+    vertical-align: sub;
+    border-radius: 50px;
 }
 
 .correct {
-    width: 30px;
+    width: 15px;
     background: rgb(5, 182, 5);
-    height: 16px;
+    height: 15px;
     display: inline-block;
     margin-top: 5px;
-    vertical-align: middle;
+    vertical-align: sub;
+    border-radius: 50px;
 }
 .arr {
     cursor: pointer;
+}
+.custom-lander{
+    background: #343a40 !important;
+    color: white;
+    font-weight: bold;
+}
+.hide-header {
+    display: none !important;
 }

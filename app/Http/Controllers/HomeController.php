@@ -123,6 +123,7 @@ class HomeController extends Controller
     public function getresult() {
         // fetch all test data of this user;
         $returnData = Result::where('user_id','=',\Auth::user()->id)->get();
+
         return view('view',['data' => $returnData]);
     }
     public function getresultdetails($id) {
@@ -133,7 +134,7 @@ class HomeController extends Controller
         ->where('results.user_id', \Auth::user()->id)
         ->where('result_details.result_id',$id)
         ->get();
-        return view('viewdetails',['data' => $returnData]);
+        return view('viewdetails',['data' => $returnData,'test_id'=>$id]);
     }
 
     public function getAllUser(Request $req) {

@@ -29,7 +29,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $i =1; ?>
+                                <?php $i =1;?>
                                 @foreach ($data as $sub)
                                     <tr>
                                         <th scope="row">{{$i}}</th>
@@ -40,6 +40,10 @@
                                     </tr>
                                     <?php $i++ ?>
                                 @endforeach
+
+                                @if ($data->isEmpty())
+                                    <tr><td></td><td></td><td>No record found</td></tr>
+                                @endif
                             </tbody>
                         </table>
 
