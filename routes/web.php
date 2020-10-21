@@ -56,16 +56,5 @@ Route::post('/sendEmail', [App\Http\Controllers\Mails::class, 'mailsend'])->name
 // Route::post('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
 
 
-<<<<<<< HEAD
 // Auth::routes();
 // Route::get('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
-=======
-Auth::routes();
-Route::get('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
-
-
-Auth::routes();
-Route::get('/instruction', function () {
-    return view('instruction');
-});
->>>>>>> 3e2ea75bd79149c9855b946ad753afb893470e0b
