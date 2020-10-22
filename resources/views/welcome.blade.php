@@ -72,7 +72,7 @@
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 25</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> B-Tech(C.S) [honours]</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> sagarjat4121@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email Id:</strong> sagarjat4121@gmail.com</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
