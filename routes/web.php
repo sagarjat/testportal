@@ -17,50 +17,44 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/sendEmail', [App\Http\Controllers\Mails::class, 'mailsend'])->name('mail');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-Auth::routes();
-
-Route::post('/submit', [App\Http\Controllers\HomeController::class, 'submit'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/submitexam', function () {
-    return view('submit');
-});
+// Route::post('/submit', [App\Http\Controllers\HomeController::class, 'submit'])->name('home');
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/view', [App\Http\Controllers\HomeController::class, 'getresult'])->name('home');
-
-Auth::routes();
-
-Route::get('/viewdetails/{id}', [App\Http\Controllers\HomeController::class, 'getresultdetails'])->name('home');
+// Route::get('/submitexam', function () {
+//     return view('submit');
+// });
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/starttest', [App\Http\Controllers\HomeController::class, 'starttest'])->name('home');
+// Route::get('/view', [App\Http\Controllers\HomeController::class, 'getresult'])->name('home');
 
+// Auth::routes();
 
-Auth::routes();
-Route::post('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
-
-
-Auth::routes();
-Route::get('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
+// Route::get('/viewdetails/{id}', [App\Http\Controllers\HomeController::class, 'getresultdetails'])->name('home');
 
 
-Auth::routes();
-Route::get('/instruction', function () {
-    return view('instruction');
-});
+// Auth::routes();
+
+// Route::get('/starttest', [App\Http\Controllers\HomeController::class, 'starttest'])->name('home');
+
+
+// Auth::routes();
+// Route::post('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
+
+
+// Auth::routes();
+// Route::get('/participents', [App\Http\Controllers\HomeController::class, 'getAllUser'])->name('home');
