@@ -393,7 +393,7 @@
                 <h4>Intern Software developer</h4>
                 <h5>JAN-2018 - NOV-2019</h5>
                 <p><em>Organization Name: Web Mitra. jodhpure, rajasthan </em></p>
-                <b>6) Project Name: Online Test Portal</b>
+                <b>7) Project Name: Online Test Portal</b>
                 <ul>
                     <li>Technology Name:J2EE,jdbc,html,css</li>
                     <li>Duration: Nov. 2017 – Feb. 2018</li>
